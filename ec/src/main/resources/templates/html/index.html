@@ -5,8 +5,40 @@
 	<meta charset="UTF-8">
 </head>
 
+	<style>
+		header{
+			
+			height: 70px;
+			display: flex;
+			justify-content:space-evenly;
+			background-color: sandybrown;
+		}
+		
+		
+	</style>
+
 <body>
+	
+	<header>
+		<div class="topLinkAria">
+			<a th:href="@{/}" th:text="ECサイト"></a>
+		</div>
+		
+		<div class="searchAria">
+			<form th:action="@{/}">
+				<input type="text" class="searchText" name="searchText">
+				<input type="submit" value="検索">
+			</form>
+		</div>
+		
+		<div class="loginAria">
+			<a th:href="@{/}" th:text="ログイン"></a>
+		</div>
+		
+	</header>
+	
 	トップページ
+	
 </body>
 
 </html>

@@ -9,6 +9,7 @@ public class IndexController {
 	// トップページに遷移
 	@GetMapping(path = "/")
 	public String index() {
+		
 		return "html/index";
 	}
 }
